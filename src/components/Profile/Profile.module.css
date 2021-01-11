@@ -34,7 +34,7 @@
   background-color: #f3f6f9;
 }
 
-.stats li {
+.stats .item {
   display: flex;
   padding: 30px 0;
   width: 100%;
