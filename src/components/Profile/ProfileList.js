@@ -1,12 +1,12 @@
-import UserMarkup from './UserMarkup';
+import Profile from './Profile';
 import PropTypes from 'prop-types';
 
-function Profile({ items }) {
+function ProfileList({ items }) {
   return (
     <ul>
       {items.map(user => (
         <li key={user.tag}>
-          <UserMarkup
+          <Profile
             name={user.name}
             tag={user.tag}
             location={user.location}
@@ -21,7 +21,7 @@ function Profile({ items }) {
   );
 }
 
-Profile.propTypes = {
+ProfileList.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       tag: PropTypes.string.isRequired,
@@ -29,4 +29,4 @@ Profile.propTypes = {
   ),
 };
 
-export default Profile;
+export default ProfileList;

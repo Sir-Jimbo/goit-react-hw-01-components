@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import defaultImage from './default.jpg';
 
-export default function UserMarkup({
+export default function Profile({
   name,
   tag,
   location,
@@ -37,7 +37,7 @@ export default function UserMarkup({
   );
 }
 
-UserMarkup.propTypes = {
+Profile.propTypes = {
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
