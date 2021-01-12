@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import s from './Profile.module.css';
 import defaultImage from './default.jpg';

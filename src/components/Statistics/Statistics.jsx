@@ -1,10 +1,11 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
 
 function Statistics({ title, stats }) {
   return (
     <section className={s.container}>
-      <h2 className={s.title}>{title}</h2>
+      {title && <h2 className={s.title}>{title}</h2>}
       <ul className={s.list}>
         {stats.map(stat => (
           <li
